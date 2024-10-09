@@ -6,7 +6,7 @@ const CreateComments = ({ postId }) => {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     if (comment.length > 3) {
-      await axios.post(`http://post.com/posts/${postId}/comments`, {
+      await axios.post(`http://posts.com/posts/${postId}/comments`, {
         content: comment,
       });
       setComment("");

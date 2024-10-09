@@ -5,7 +5,7 @@ const CreatePost = () => {
   const [postContent, setPostContent] = useState("");
   const handleFormSubmit = async (e) => {
     e.preventDefault();
-    await axios.post("http://post.com/posts", {
+    await axios.post("http://posts.com/posts/create", {
       title: postContent,
     });
 
