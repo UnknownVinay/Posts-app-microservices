@@ -1,6 +1,9 @@
 # setting a base image
 FROM node:alpine
 
+ENV CI=true
+ENV WDS_SOCKET_PORT=0
+
 #setting the directory where code files should be placed in container
 WORKDIR /app
 

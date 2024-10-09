@@ -8,7 +8,7 @@ const ShowPost = () => {
 
   const fetchPosts = async () => {
     try {
-      const response = await axios.get("http://query-srv:4002/posts");
+      const response = await axios.get("http://post.com/posts");
 
       setPosts(response.data);
     } catch (error) {
